@@ -1,0 +1,9 @@
+package com.ldcc.eunsol.persistence;
+
+import com.ldcc.eunsol.domain.MemberVO;
+
+public class MemberDAO {
+	public String getTime();
+	public void insertMember(MemberVO vo)
+	
+}

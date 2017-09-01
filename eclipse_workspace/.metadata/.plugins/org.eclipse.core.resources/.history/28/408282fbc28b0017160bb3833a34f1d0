@@ -1,0 +1,27 @@
+<!-- Hanna font 적용-->
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+body {
+	font-family: 'Hanna';
+}
+
+@media ( max-width : 768px) {
+	 #test {
+		background-color: blue;
+		 font-size: 1130px; 
+	}
+}
+
+@media ( max-width : 992px) {
+	 #test {
+		background-color: red;
+		 font-size: 280px; 
+	}
+}
+
+@media ( max-width : 1200px) {
+	 #test {
+		background-color: yellow;
+		 font-size: 30px ;
+	}
+}

@@ -1,0 +1,5 @@
+package com.ldcc.eunsol.persistence;
+
+public interface MemberDAO {
+
+}
