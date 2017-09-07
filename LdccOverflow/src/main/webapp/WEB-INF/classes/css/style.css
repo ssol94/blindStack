@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+body {
+	font-family: 'Hanna';
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: scroll; /* scrollbars */
+}
+
+@media ( max-width : 768px) {
+	.container {
+		width: 750px;
+		background: blue;
+	}
+	
+}
+
+@media ( max-width : 992px) {
+	.container {
+		width: 970px;
+		background: #ff6666;
+	}
+	.thumbnail {
+	font-size: 80px;
+	}
+}
+
+@media ( max-width : 1200px) {
+	.header {
+		font-size: 50px;
+	}
+	.container {
+		width: 1170px;
+		font-size: 80px;
+	}
+	.contents {
+	font-size: 60px;
+	}
+	.thumb {
+	font-size: 50px;
+	}
+}
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}

@@ -1,8 +1,0 @@
-package com.ldcc.eunsol;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-
-public class MariaDBConnectionTest {
-	
-}

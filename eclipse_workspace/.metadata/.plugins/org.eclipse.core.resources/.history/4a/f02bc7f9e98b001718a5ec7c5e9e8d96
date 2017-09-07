@@ -1,7 +1,0 @@
-@charset "UTF-8";
-
-<!-- Hanna font 적용-->
-
-body {
-	font-size : 1000px;
-}
