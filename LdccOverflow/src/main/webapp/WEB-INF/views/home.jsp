@@ -28,7 +28,6 @@
 	document.addEventListener('keyup', function(e) { 
 		//if (e.keyCode === 44) { // 44: print screen
 			if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) ) {
-
 				clipboardData.clearData(); //ie에서만 적용
 			}
 		//}
@@ -84,17 +83,13 @@
 
 	function strncmp(str1, str2, str1_start, str1_stop) { //sentence의 모든 글작
 		var j = 0;
-		console.log('start : ' + str1_start + ', stop : ' + str1_stop);
 		for (var i = str1_start; i < str1_stop;) {
-			console.log('str1 : ' + str1[i] + ', str2 : ' + str2[j]);
 			if (str1[i] > str2[j]) {
-				console.log('big');
 				return 1;
 			} else if (str1[i] == str2[j]) {
 				i++;
 				j++;
 			} else if (str1[i] < str2[j]) {
-				console.log('small')
 				return -1;
 			}
 		}
@@ -103,11 +98,9 @@
 	function strtok(str, start, stop) {
 		var tmp = [];
 		var j = 0;
-		console.log('start : ' + start + ', stop : ' + stop);
 		for (var i = start; i < stop; i++) {
 
 			tmp[j] = str[i];
-			console.log("tmp[] : " + tmp[j++] + "  , str[] : " + str[i]);
 		}
 		return tmp;
 	}
@@ -169,7 +162,6 @@
 				i++;
 			}
 			if (wordIndex == word_length) {
-				console.log('sentence : ' + sentence + ', word : ' + word);
 				return sentence.replace(word, makeHeart(word_length));
 			}
 		}
