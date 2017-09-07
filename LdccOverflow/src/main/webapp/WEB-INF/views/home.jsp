@@ -27,7 +27,10 @@
 
 	document.addEventListener('keyup', function(e) { 
 		//if (e.keyCode === 44) { // 44: print screen
-			clipboardData.clearData(); //ie에서만 적용
+			if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) ) {
+
+				clipboardData.clearData(); //ie에서만 적용
+			}
 		//}
 	});
 
